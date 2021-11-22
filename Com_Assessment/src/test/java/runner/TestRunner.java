@@ -17,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-		features="E:\\compre\\BDD_Cucmber\\BDD\\src\\test\\java\\Features\\TC.feature",
+		features="E:\\compre\\CucumberPro-main\\Com_Assessment\\src\\test\\java\\Features\\TC.feature",
 		glue="StepDefinations")
 public class TestRunner extends AbstractTestNGCucumberTests{
 

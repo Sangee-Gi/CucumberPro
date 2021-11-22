@@ -17,13 +17,13 @@ public class ReadPropertyFile {
 		// TODO Auto-generated method stub
 		p = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"E:\\compre\\BDD_Cucmber\\BDD\\testdata\\configure.properties");
+				"E:\\compre\\CucumberPro-main\\Com_Assessment\\testdata\\configure.properties");
 		p.load(fis);
 		String browserName = p.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"E:\\compre\\BDD_Cucmber\\BDD\\drivers\\chromedriver2.exe");
+					"C:\\Users\\WELCOME\\git\\CucumberPro\\Com_Assessment\\drivers\\chromedriver2.exe");
 			driver = new ChromeDriver();
 		} 
 		return driver;

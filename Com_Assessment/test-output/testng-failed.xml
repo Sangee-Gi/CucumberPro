@@ -3,10 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="pageobject.SigninPage">
+        <methods>
+          <include name="logintest"/>
+          <include name="close"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- pageobject.SigninPage -->
       <class name="runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="runScenario" invocation-numbers="2"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- runner.TestRunner -->
